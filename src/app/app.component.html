@@ -9,3 +9,13 @@ Age :
 <input type="number" [(ngModel)]="age" />
 <br />
 <button (click)="submit()">Submit</button>
+<br />
+
+<br />
+New name:<input type="text" [(ngModel)]="newname" />
+
+<div *ngFor="let doc of allData">
+  Name : {{ doc.name }} || Age: {{ doc.age }}
+  <button (click)="editDoc(doc._id)">Edit</button>
+  <button (click)="deleteDoc(doc._id)">Delete</button>
+</div>
