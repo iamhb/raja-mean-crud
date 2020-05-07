@@ -3,19 +3,19 @@
 </h1>
 <br />
 
-Name : <input type="text" [(ngModel)]="name" />
+Name : <input type="text" [(ngModel)]="user.name" />
 <br />
 Age :
-<input type="number" [(ngModel)]="age" />
+<input type="number" [(ngModel)]="user.age" />
 <br />
 <button (click)="submit()">Submit</button>
 <br />
 
 <br />
-New name:<input type="text" [(ngModel)]="newname" />
+New name:<input type="text" [(ngModel)]="user.newname" />
 
-<div *ngFor="let doc of allData">
+<!-- <div *ngFor="let doc of allData">
   Name : {{ doc.name }} || Age: {{ doc.age }}
   <button (click)="editDoc(doc._id)">Edit</button>
   <button (click)="deleteDoc(doc._id)">Delete</button>
-</div>
+</div> -->
